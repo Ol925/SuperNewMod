@@ -1,6 +1,6 @@
 [
 {
-  "modid": "supernewmod",
+  "modid": "snm",
   "name": "Super New Mod",
   "description": "My first mod.",
   "version": "${version}",

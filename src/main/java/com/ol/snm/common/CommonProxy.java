@@ -1,9 +1,10 @@
-package com.ol925.supernewmod.mod.common;
+package com.ol.snm.common;
 
-import com.ol925.supernewmod.mod.item.ItemLoader;
+import com.ol.snm.item.ItemLoader;//不要忘记导入ItemLoader类
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
 
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event)

@@ -1,16 +1,19 @@
-package com.ol925.supernewmod.mod.client;
+package com.ol.snm.client;
 
-import com.ol925.supernewmod.mod.common.CommonProxy;
+import com.ol.snm.common.CommonProxy;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-public class ClientProxy  extends CommonProxy {
+
+public class ClientProxy extends CommonProxy
+{
     @Override
     public void preInit(FMLPreInitializationEvent event)
     {
         super.preInit(event);
+        new ItemRenderLoader();
     }
 
     @Override
