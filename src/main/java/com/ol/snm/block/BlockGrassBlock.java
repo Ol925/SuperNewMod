@@ -3,6 +3,8 @@ package com.ol.snm.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
+import com.ol.snm.creativetab.CreativeTabsLoader;
+
 public class BlockGrassBlock extends Block{
     public BlockGrassBlock() {
         super(Material.ground);
@@ -10,7 +12,7 @@ public class BlockGrassBlock extends Block{
         this.setHardness(0.5F);
         this.setStepSound(Block.soundTypeGrass);
         this.setResistance(666.0F);
-
+        this.setCreativeTab(CreativeTabsLoader.tabSnm);
     }
 
 }
