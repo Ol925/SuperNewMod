@@ -13,16 +13,19 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;//预初始
 
 public class ItemLoader {
     public static Item goldenEgg = new ItemGoldenEgg();//此处的goldenEgg是注册的非本地化名称
+    public static Item redstonePickaxe = new ItemRedstonePickaxe();
 
     public ItemLoader(FMLPreInitializationEvent event)
     {
         register(goldenEgg, "golden_egg");
+        register(redstonePickaxe,"rP");
     }
 
     @SideOnly(Side.CLIENT)
     public static void registerRenders()
     {
         registerRender(goldenEgg);
+        registerRender(redstonePickaxe);
     }
 
 

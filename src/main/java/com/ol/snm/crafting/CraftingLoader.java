@@ -2,6 +2,7 @@ package com.ol.snm.crafting;
 
 import com.ol.snm.block.BlockLoader;
 import com.ol.snm.item.ItemLoader;
+import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -25,6 +26,11 @@ public class CraftingLoader {
                         "##", "##", '#', Blocks.vine
                 });
         GameRegistry.addShapelessRecipe(new ItemStack(Blocks.vine, 4), BlockLoader.grassBlock);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.redstonePickaxe), new Object[]
+                {
+                        "###", " * ", " * ", '#', Blocks.redstone_block, '*', Items.stick
+                });
+
     }
 
     private static void registerSmelting()
